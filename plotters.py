@@ -2,6 +2,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 import seaborn as sns
+from matplotlib.colors import ListedColormap
 from sklearn.metrics import classification_report
 
 
@@ -44,5 +45,4 @@ def get_classification_report(y_train_true, y_train_pred, y_test_true, y_test_pr
     print('TEST\n\n' + classification_report(y_test_true, y_test_pred))
     print('CONFUSION MATRIX\n')
     print(pd.crosstab(y_test_true, y_test_pred))
-
 
